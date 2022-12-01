@@ -1,6 +1,6 @@
 #include <iostream>
 #include <ostream>
-#include <unordered_map>
+#include <map>
 
 class Solution {
 public:
@@ -10,22 +10,20 @@ public:
         // Declaring an unordered map for declaring 
         // the values of the roman letters with
         // their corresponding integer values.
-        std::unordered_map<char, int> rtoi_vals;
-
-        // Inserting the valus of the integers
-        // to the corresponding Roman Letters.
-        rtoi_vals['I'] = 1;
-        rtoi_vals['V'] = 5;
-        rtoi_vals['X'] = 10;
-        rtoi_vals['L'] = 50;
-        rtoi_vals['C'] = 100;
-        rtoi_vals['D'] = 500;
-        rtoi_vals['M'] = 1000;
+        std::map<char, int> rtoi_vals = {
+            {'I' , 1},
+            {'V' , 5},
+            {'X' , 10},
+            {'L' , 50},
+            {'C' , 100},
+            {'D' , 500},
+            {'M' , 1000}
+        };
         
         // Traversing through the  string to calculate
         // the total integer valur of the given
         // roman number
-        for (int i = 0; i <= s.length(); i++) {
+        for (int i = 0; i < s.length(); i++) {
             if (rtoi_vals[s[i]] >= rtoi_vals[s[i+1]]) {
             int_value += rtoi_vals[s[i]];
             }
