@@ -1,7 +1,18 @@
+/**
+ * @file romanToInteger.cpp
+ * @author Jay Prajapati (jayprajapati9900@gmail.com)
+ * @brief 
+ * @version 0.1
+ * @date 2022-12-01
+ */
 #include <iostream>
 #include <ostream>
 #include <map>
 
+/**
+ * @brief Declaring the method to convert the Roman Number
+ *        to an integer.
+ */
 class Solution {
 public:
     int romanToInt(std::string s) {
