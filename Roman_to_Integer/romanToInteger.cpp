@@ -1,9 +1,12 @@
 /**
  * @file romanToInteger.cpp
  * @author Jay Prajapati (jayprajapati9900@gmail.com)
- * @brief
+ * @brief Coverts Roman Number to Integer Number
  * @version 0.1
  * @date 2022-12-01
+ *
+ * @copyright Copyright (c) 2022
+ *
  */
 #include <iostream>
 #include <map>
